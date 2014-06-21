@@ -1,4 +1,5 @@
-## Cache the inverse of a matrix
+## This file contains functions that can be used to create
+## a cached solved matrix computation
 
 ## Create an object that can cash inversed matrix computation
 
@@ -15,7 +16,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Cache a solved matrix
+## Solve the matrix within the cache matrix parameter and cache
+## the result. In case there is already a cached result return it.
 
 cacheSolve <- function(x, ...) {
   s <- x$getsolve()
